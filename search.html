@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+<html lang="en" dir="ltr">
+
+<head>
+
+<meta charset="utf-8">
+
+<meta name="viewport"
+content="width=device-width,initial-scale=1">
+
+<title>Search For Apps and Games</title>
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+* {
+margin: 0;
+padding: 0;
+font-family: 'Poppins', sans-serif;
+}
+
+:root {
+
+--primary-color: #E5E4E2;
+--secondary-color: black;
+--tertiary-color: white;
+--search-color: white;
+
+}
+
+.dark-theme {
+--primary-color: black;
+--secondary-color: white;
+--tertiary-color: #36454F;
+--search-color: black;
+}
+
+body {
+display: flex;
+justify-content: center;
+background-color: var(--primary-color);
+}
+
+.searchbody {
+width: 350px;
+}
+
+.center {
+width: 350px;
+height: 100%;
+}
+
+
+#myInput {
+  background-color: var(--search-color); /* Add a background color to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 81%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 2px solid gray; /* Add a gray border */
+  margin-bottom: 12px; /* Add some space below the input */
+color: var(--secondary-color);
+position: fixed;
+top: 5px;
+left: 5px;
+border-radius: 10px;
+box-shadow: 2px 2px 3px gray;
+}
+
+#myUL {
+  /* Remove default list styling */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#myUL li a {
+  border: 1px solid white; /* Add a border to all links */
+  margin-top: 5px; /* Prevent double borders */
+  background-color: var(--tertiary-color); /*background color */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove default text underline */
+  font-size: 18px; /* Increase the font-size */
+  color: var(--secondary-color); /* Add a white text color */
+  display: block; /* Make it into a block element to fill the whole list */
+  padding-left: 55px;
+  border-radius: 5px;
+}
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee; /* Add a hover effect to all links, except for headers */
+  color: black;
+}
+
+/*Content Starts*/
+
+.content {
+position: fixed;
+height: 40px;
+width: 350px;
+bottom: 0;
+background-color: transparent;
+}
+
+.content .a1 {
+font-weight: bold;
+font-size: 16px;
+text-align: center;
+color: var(--secondary-color);
+}
+
+
+#myUL li a img {
+margin-top: -5px;
+height: 35px;
+width: 35px;
+border-radius: 5px;
+position: absolute;
+left: 15px;
+border: solid lightgray 1px;
+}
+
+.content .container a {
+display: flex;
+position: absolute;
+font-size: 16px;
+left: 0px;
+width: 254px;
+padding-top: 8px;
+margin-left: 10px;
+height: 70px;
+text-decoration: none;
+border-radius: 5px;
+color: var(--secondary-color);
+padding-left: 77px;
+}
+
+.btn-toggle {
+background-color: white;
+width: 35px;
+height: 35px;
+border-radius: 5px;
+display: none;
+}
+
+.btn-toggle img {
+margin-top: 3px;
+height: 26px;
+width: 26px;
+display: none;
+}
+
+.content .container a:hover {
+background-color: black;
+color: white;
+cursor: pointer;
+}
+/*Content ends*/
+
+.footer {
+position: fixed;
+margin-top: 0;
+padding-top: 5px;
+padding-bottom: 20px;
+width: 350px;
+background-color: var(--tertiary-color);
+border-top: solid 1px gray;
+}
+
+.footer p {
+text-align: center;
+font-size: 15px;
+color: green;
+}
+
+.footer a {
+color: gray;
+}
+
+.back {
+position: fixed;
+top: 10px;
+right: 10px;
+}
+
+.back img {
+height: 40px;
+width: 40px;
+}
+
+@media only screen and (max-width: 1000px) {
+
+#myUL li a img {
+left: 192px;
+}
+
+#myInput {
+width: 90%;
+}
+
+}
+
+@media only screen and (max-width: 650px) {
+
+#myUL li a img {
+left: 15px;
+}
+
+#myInput {
+width: 79%;
+}
+
+
+}
+</style>
+</head>
+<body>
+
+<div class="center">
+
+<div class="searchbody">
+
+
+<br> <br> <br>
+
+<ul id="myUL">
+  <li><a href="apps1.html">Apps<img src="assets/images.png"></a></li>
+  
+  <li><a href="games1.html">Games<img src="assets/images.png"></a></li>
+
+  <li><a href="facebooklite.html">facebook lite<img src="assets/images1.png"></a></li>
+  
+  <li><a href="facebook.html">facebook<img src="assets/images4.png"></a></li>
+
+  <li><a href="messengerlite.html">messenger lite<img src="assets/images2.png"></a></li>
+  
+  <li><a href="messenger.html">messenger<img src="assets/images5.png"></a></li>
+  
+  <li><a href="twitter.html">twitter<img src="assets/images6.png"></a></li>
+ 
+  <li><a href="gmeet.html">google meet<img src="assets/images3.png"></a></li>
+  
+  <li><a href="gclassroom.html">google classroom<img src="assets/images.png"></a></li>
+  
+  <li><a href="twitterlite.html">twitter lite<img src="assets/images7.png"></a></li>
+  
+  <li><a href="zombiecatchers.html">zombie catchers<img src="assets/images8.png"></a></li>
+  
+  <li><a href="zombietsunami.html">zombie tsunami<img src="assets/images9.png"></a></li>
+  
+  <li><a href="templerun.html">temple run<img src="assets/images10.png"></a></li>
+  
+  <li><a href="pvz.html">plants vs zombies free<img src="assets/images11.png"></a></li>
+  
+  <li><a href="cookingfever.html">cooking fever<img src="assets/images12.png"></a></li>
+  
+  <li><a href="pookingbilliards.html">pooking billiards city<img src="assets/images13.png"></a></li>
+  
+  <li><a href="pixellab.html">pixel lab<img src="assets/images14.png"></a></li>
+  
+  <li><a href="twistytimer.html">twisty timer<img src="assets/images15.png"></a></li>
+  
+  <li><a href="#">microsoft word<img src="assets/images16.png"></a></li>
+  
+  <li><a href="wpsoffice.html">wps office<img src="assets/images17.png"></a></li>
+  
+  <li><a href="shareitlite.html">shareit lite<img src="assets/images19.png"></a></li>
+  
+  <li><a href="turbovpnlite.html">turbo vpn lite<img src="assets/images18.png"></a></li>
+  
+  <li><a href="sortpuz.html">Sort Puz: water color sort puz...<img src="assets/images20.png"></a></li>
+  
+  <li><a href="mobilelegends.html">mobile legends bang bang<img src="assets/images21.png"></a></li>
+  
+  <li><a href="phslam.html">PBA Philippine Slam<img src="assets/images22.png"></a></li>
+  
+  <li><a href="dumbwaystodie.html">Dumb Ways to Die<img src="assets/images24.png"></a></li>
+  
+  <li><a href="specimen.html">Specimen Zero<img src="assets/images25.png"></a></li>
+  
+  <li><a href="remini.html">Remini ai photo enhancer<img src="assets/images26.png"></a></li>
+  
+  <li><a href="coc.html">Clash of Clans<img src="assets/images28.png"></a></li>
+  
+  <li><a href="pinterest.html">Pinterest<img src="assets/images27.png"></a></li>
+  
+  <li><a href="duckduckgo.html">DuckDuckGo Privacy Browser<img src="assets/images29.png"></a></li>
+  
+  <li><a href="zarchiver.html">ZArchiver<img src="assets/images30.png"></a></li>
+  
+  <li><a href="amongus.html">Among Us<img src="assets/images31.png"></a></li>
+  
+  <li><a href="netflix.html">Netflix<img src="assets/images32.png"></a></li>
+  
+  <li><a href="spotify.html">Spotify<img src="assets/images34.png"></a></li>
+  
+  <li><a href="wattpad.html">Wattpad<img src="assets/images35.png"></a></li>
+  
+  <li><a href="ppsspp.html">PPSSPP Free<img src="assets/images36.png"></a></li>
+  
+  <li><a href="slither.html">slither.io<img src="assets/images37.png"></a></li>
+  
+  <li><a href="wordscapes.html">Wordscapes<img src="assets/images38.png"></a></li>
+  
+  <li><a href="gcash.html">GCash<img src="assets/images39.png"></a></li>
+  
+  <li><a href="#">Name<img src="assets/images.png"></a></li>
+  
+  <li><a href="#">Name<img src="assets/images.png"></a></li>
+  
+  <li><a href="#">Name<img src="assets/images.png"></a></li>
+  
+  <li><a href="#">Name<img src="assets/images.png"></a></li>
+  
+  <li><a href="#">Name<img src="assets/images.png"></a></li>
+  
+  
+  <br> <br> <br>
+</ul>
+</div>
+
+<div class="content">
+<div class="a1">  
+				
+				<div class="btn-toggle">
+  <img src="assets/moon.png"/></a>
+  </div>
+				
+  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Find apps and games...">
+    
+    <div class="back">
+    <a onclick="goBack()"><img src="assets/back.png"></a>
+    </div>
+    
+    
+    
+</div>
+
+<div class="footer">
+    <p>©2021 ApkGet</p>
+    
+    </div>
+
+</div>
+
+
+<script>
+function myFunction() {
+  // Declare variables
+  var input, filter, ul, li, a, i, txtValue;
+  input = document.getElementById('myInput');
+  filter = input.value.toUpperCase();
+  ul = document.getElementById("myUL");
+  li = ul.getElementsByTagName('li');
+
+  // Loop through all list items, and hide those who don't match the search query
+  for (i = 0; i < li.length; i++) {
+    a = li[i].getElementsByTagName("a")[0];
+    txtValue = a.textContent || a.innerText;
+    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      li[i].style.display = "";
+    } else {
+      li[i].style.display = "none";
+    }
+  }
+}
+
+ //back button//
+function goBack() {
+  window.history.back();
+}
+
+
+const btn = document.querySelector(".btn-toggle"); const currentTheme = localStorage.getItem("theme"); if (currentTheme == "dark") { document.body.classList.add("dark-theme"); } btn.addEventListener("click", function () { document.body.classList.toggle("dark-theme"); let theme = "light"; if (document.body.classList.contains("dark-theme")) { theme = "dark"; } localStorage.setItem("theme", theme); });
+
+
+</script>
+
+</body>
+</html>
